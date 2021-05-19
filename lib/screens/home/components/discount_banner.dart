@@ -7,9 +7,13 @@ class DiscountBanner extends StatelessWidget {
     Key key,
   }) : super(key: key);
 
+
+
+
   @override
   Widget build(BuildContext context) {
-    return Container(
+
+      return Container(
       // height: 90,
       width: double.infinity,
       margin: EdgeInsets.all(getProportionateScreenWidth(20)),

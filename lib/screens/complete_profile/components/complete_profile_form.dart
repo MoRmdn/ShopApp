@@ -52,7 +52,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
             text: "continue",
             press: () {
               if (_formKey.currentState.validate()) {
-                Navigator.pushNamed(context, SignUpSuccessScreen.routeName);
+                Navigator.pushReplacementNamed(context, SignUpSuccessScreen.routeName);
               }
             },
           ),

@@ -29,13 +29,13 @@ class Body extends StatelessWidget {
           child: DefaultButton(
             text: "Continue to home",
             press: () {
-              Navigator.pushNamed(context, HomeScreen.routeName);
+              Navigator.pushReplacementNamed(context, HomeScreen.routeName);
             },
           ),
         ),
         Spacer(),
         TextButton.icon(onPressed: (){
-          Navigator.pushNamed(context, SignInScreen.routeName);
+          Navigator.pushReplacementNamed(context, SignInScreen.routeName);
         }, icon: Icon(Icons.logout), label: Text("Log out"))
       ],
     );

@@ -1,9 +1,62 @@
 import 'package:flutter/material.dart';
-
+import 'package:shop_app/constants.dart';
 import 'profile_menu.dart';
 import 'profile_pic.dart';
+import 'package:shop_app/screens/sign_in/sign_in_screen.dart';
 
 class Body extends StatelessWidget {
+    Widget notif2(var color, String title, BuildContext cctx) {
+      return Row(
+        children: [
+          Container(
+            width: MediaQuery.of(cctx).size.width,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  color.withOpacity(0.9),
+                  color,
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            child:
+            //TextButton.icon
+                TextButton(
+              child: Text("$title"),
+              /* icon: Icon(Icons.arrow_forward_ios_rounded),*/
+              onPressed: () {},
+            ),
+          ),
+        ],
+      );
+    }
+
+    void show2(BuildContext ctx) {
+      showModalBottomSheet(
+          elevation: 10,
+          backgroundColor: kPrimaryColor,
+          context: ctx,
+          builder: (ctx) => Container(
+                width: 300,
+                height: 250,
+                color: kPrimaryColor,
+                child: Column(
+                  children: [
+                    SizedBox(height: 10),
+                    notif2(Colors.white, "HEY Welcome To our APP", ctx),
+                    SizedBox(height: 10),
+                    notif2(
+                        Colors.white, "If u need any help Contact with Us", ctx),
+                    SizedBox(height: 10),
+                    notif2(Colors.white,
+                        "U Can Use this code WELCOME10 to get \n 10% discount", ctx),
+                  ],
+                ),
+              ));
+    }
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -19,13 +72,13 @@ class Body extends StatelessWidget {
           ),
           ProfileMenu(
             text: "My Orders",
-            icon: "assets/icons/Gift Icon.svg",
+            icon: "assets/icons/order.svg",
             press: () => {},
           ),
           ProfileMenu(
             text: "Notifications",
             icon: "assets/icons/Bell.svg",
-            press: () {},
+            press: () => show2(context),
           ),
           ProfileMenu(
             text: "Settings",
@@ -40,7 +93,9 @@ class Body extends StatelessWidget {
           ProfileMenu(
             text: "Log Out",
             icon: "assets/icons/Log out.svg",
-            press: () {},
+            press: () {
+            Navigator.pushReplacementNamed(context, SignInScreen.routeName);
+            },
           ),
         ],
       ),

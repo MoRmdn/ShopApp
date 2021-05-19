@@ -1,22 +1,31 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:shop_app/models/Cart.dart';
-
+import 'package:shop_app/components/product_card.dart';
+import 'package:shop_app/models/Product.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:shop_app/models/Product.dart';
+import 'package:shop_app/screens/details/details_screen.dart';
 import '../../../size_config.dart';
-import 'cart_card.dart';
+import 'card.dart';
+import 'package:shop_app/constants.dart';
+import 'Cart.dart';
 
 class Body extends StatefulWidget {
+
   @override
   _BodyState createState() => _BodyState();
 
 }
 
 class _BodyState extends State<Body> {
+
+
+
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding:
-          EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+      EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
       child: ListView.builder(
         itemCount: demoCarts.length,
         itemBuilder: (context, index) => Padding(
@@ -42,7 +51,7 @@ class _BodyState extends State<Body> {
                 ],
               ),
             ),
-            child: CartCard(cart: demoCarts[index]),
+            child: CartCards(cart: demoCarts[index]),
           ),
         ),
       ),

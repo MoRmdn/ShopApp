@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '../../art_screen/art.dart';
 import '../../../size_config.dart';
 import 'section_title.dart';
 
@@ -35,7 +35,9 @@ class SpecialOffers extends StatelessWidget {
                 image: "assets/images/Hero Arm prosthetic.jpeg",
                 category: "Art",
                 numOfBrands: 24,
-                press: () {},
+                press: () {
+                  Navigator.pushNamed(context, ART.routeName);
+                },
               ),
               SizedBox(width: getProportionateScreenWidth(20)),
             ],

@@ -11,6 +11,9 @@ import 'package:shop_app/screens/splash/splash_screen.dart';
 import 'package:shop_app/screens/signUp_success/signup_success_screen.dart';
 import 'package:shop_app/screens/guest/guest_login_success_screen.dart';
 import 'screens/sign_up/sign_up_screen.dart';
+import 'screens/wishlist/wishlist.dart';
+import 'screens/art_screen/art.dart';
+import 'screens/hero_screen/hero.dart';
 
 // We use name route
 // All our routes will be available here
@@ -27,4 +30,7 @@ final Map<String, WidgetBuilder> routes = {
   ProfileScreen.routeName: (context) => ProfileScreen(),
   SignUpSuccessScreen.routeName: (context) => SignUpSuccessScreen(),
   GuestLoginSuccessScreen.routeName: (context) => GuestLoginSuccessScreen(),
+  WishList.routeName: (context) => WishList(),
+  ART.routeName: (context) => ART(),
+  HERO.routeName: (context) => HERO(),
 };

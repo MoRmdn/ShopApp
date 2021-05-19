@@ -60,7 +60,7 @@ class _SignFormState extends State<SignForm> {
               Text("Remember me"),
               Spacer(),
               GestureDetector(
-                onTap: () => Navigator.pushNamed(
+                onTap: () => Navigator.pushReplacementNamed(
                     context, ForgotPasswordScreen.routeName),
                 child: Text(
                   "Forgot Password",
@@ -78,7 +78,7 @@ class _SignFormState extends State<SignForm> {
                 _formKey.currentState.save();
                 // if all are valid then go to success screen
                 KeyboardUtil.hideKeyboard(context);
-                Navigator.pushNamed(context, signInSuccessScreen.routeName);
+                Navigator.pushReplacementNamed(context, signInSuccessScreen.routeName);
               }
             },
           ),
@@ -93,7 +93,7 @@ class _SignFormState extends State<SignForm> {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
             ),
             onPressed: (){
-            Navigator.pushNamed(context, GuestLoginSuccessScreen.routeName);
+            Navigator.pushReplacementNamed(context, GuestLoginSuccessScreen.routeName);
           }, )
         ],
       ),
