@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/components/custom_surfix_icon.dart';
-import 'package:shop_app/components/form_error.dart';
-import 'package:shop_app/helper/keyboard.dart';
-import 'package:shop_app/screens/forgot_password/forgot_password_screen.dart';
-import 'package:shop_app/screens/guest/guest_login_success_screen.dart';
-import 'package:shop_app/screens/signIn_success/signIn_success_screen.dart';
+import 'package:printing_app/components/custom_surfix_icon.dart';
+import 'package:printing_app/components/form_error.dart';
+import 'package:printing_app/helper/keyboard.dart';
+import 'package:printing_app/screens/forgot_password/forgot_password_screen.dart';
+import 'package:printing_app/screens/guest/guest_login_success_screen.dart';
+import 'package:printing_app/screens/signIn_success/signIn_success_screen.dart';
 
 import '../../../components/default_button.dart';
 import '../../../constants.dart';
@@ -78,23 +78,28 @@ class _SignFormState extends State<SignForm> {
                 _formKey.currentState.save();
                 // if all are valid then go to success screen
                 KeyboardUtil.hideKeyboard(context);
-                Navigator.pushReplacementNamed(context, signInSuccessScreen.routeName);
+                Navigator.pushReplacementNamed(
+                    context, signInSuccessScreen.routeName);
               }
             },
           ),
           SizedBox(height: getProportionateScreenHeight(20)),
           TextButton(
-            child: Text ("Skip"),
+            child: Text("Skip"),
             style: TextButton.styleFrom(
               primary: Colors.white,
-              backgroundColor: Colors.green,
+              backgroundColor: Color(0xFFFF7643),
+              //backgroundColor: Color.fromRGBO(122, 218, 192, 1),
               elevation: 20,
               minimumSize: Size(100, 50),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30)),
             ),
-            onPressed: (){
-            Navigator.pushReplacementNamed(context, GuestLoginSuccessScreen.routeName);
-          }, )
+            onPressed: () {
+              Navigator.pushReplacementNamed(
+                  context, GuestLoginSuccessScreen.routeName);
+            },
+          )
         ],
       ),
     );

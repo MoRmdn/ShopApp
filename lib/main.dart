@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/routes.dart';
-import 'package:shop_app/screens/profile/profile_screen.dart';
-import 'package:shop_app/screens/splash/splash_screen.dart';
-import 'package:shop_app/theme.dart';
+import 'package:flutter/widgets.dart';
+import 'package:printing_app/routes.dart';
+import './screens/splash/splash_screen.dart';
+import './theme.dart';
+
+
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   // This widget is the root of your application.
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

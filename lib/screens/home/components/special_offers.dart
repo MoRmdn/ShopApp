@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../art_screen/art.dart';
+import 'package:printing_app/screens/hero_screen/hero.dart';
+
 import '../../../size_config.dart';
+import '../../art_screen/art.dart';
 import 'section_title.dart';
 
 class SpecialOffers extends StatelessWidget {
@@ -26,15 +28,16 @@ class SpecialOffers extends StatelessWidget {
           child: Row(
             children: [
               SpecialOfferCard(
-                image: "assets/images/Awesome Prosthetics Make Kids Feel Like Superheroes.jpeg",
+                image:
+                    "assets/images/Awesome Prosthetics Make Kids Feel Like Superheroes.jpeg",
                 category: "Super Hero",
-                numOfBrands: 18,
-                press: () {},
+                numOfBrands: 5,
+                press: () => Navigator.pushNamed(context, HERO.routeName),
               ),
               SpecialOfferCard(
                 image: "assets/images/Hero Arm prosthetic.jpeg",
                 category: "Art",
-                numOfBrands: 24,
+                numOfBrands: 3,
                 press: () {
                   Navigator.pushNamed(context, ART.routeName);
                 },

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/components/default_button.dart';
-import 'package:shop_app/screens/home/home_screen.dart';
-import 'package:shop_app/size_config.dart';
-import 'package:shop_app/screens/sign_in/sign_in_screen.dart';
+import 'package:printing_app/components/default_button.dart';
+import 'package:printing_app/screens/home/home_screen.dart';
+import 'package:printing_app/screens/sign_in/sign_in_screen.dart';
+import 'package:printing_app/size_config.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -34,9 +34,12 @@ class Body extends StatelessWidget {
           ),
         ),
         Spacer(),
-        TextButton.icon(onPressed: (){
-          Navigator.pushReplacementNamed(context, SignInScreen.routeName);
-        }, icon: Icon(Icons.arrow_back), label: Text("back to login"))
+        TextButton.icon(
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, SignInScreen.routeName);
+            },
+            icon: Icon(Icons.arrow_back),
+            label: Text("back to login"))
       ],
     );
   }

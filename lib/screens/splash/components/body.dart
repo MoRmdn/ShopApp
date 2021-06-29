@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/constants.dart';
-import 'package:shop_app/screens/sign_in/sign_in_screen.dart';
-import 'package:shop_app/size_config.dart';
-
-// This is the best practice
-import '../components/splash_content.dart';
+import 'package:printing_app/constants.dart';
+import 'package:printing_app/screens/sign_in/sign_in_screen.dart';
+import 'package:printing_app/size_config.dart';
 import '../../../components/default_button.dart';
+import '../components/splash_content.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -20,8 +18,7 @@ class _BodyState extends State<Body> {
       "image": "assets/images/splash_1.png"
     },
     {
-      "text":
-          "We Help People Customize their Medical Needs",
+      "text": "We Help People Customize their Medical Needs",
       "image": "assets/images/splash_2.png"
     },
     {
@@ -29,6 +26,7 @@ class _BodyState extends State<Body> {
       "image": "assets/images/splash_3.png"
     },
   ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -70,7 +68,8 @@ class _BodyState extends State<Body> {
                     DefaultButton(
                       text: "Continue",
                       press: () {
-                        Navigator.pushReplacementNamed(context, SignInScreen.routeName);
+                        Navigator.pushReplacementNamed(
+                            context, SignInScreen.routeName);
                       },
                     ),
                     Spacer(),

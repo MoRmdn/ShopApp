@@ -4,6 +4,7 @@ import 'components/body.dart';
 
 class SignUpSuccessScreen extends StatelessWidget {
   static String routeName = "/signUp_success";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

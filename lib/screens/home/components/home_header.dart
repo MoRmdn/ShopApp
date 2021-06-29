@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/constants.dart';
-import '../../cart/cart_screen.dart';
-import 'package:shop_app/components/notification.dart';
+import 'package:printing_app/constants.dart';
+
 import '../../../size_config.dart';
+import '../../cart/cart_screen.dart';
 import 'icon_btn_with_counter.dart';
 import 'search_field.dart';
 
@@ -24,7 +24,7 @@ class HomeHeader extends StatelessWidget {
             borderRadius: BorderRadius.circular(10.0),
           ),
           child:
-          //TextButton.icon
+              //TextButton.icon
               TextButton(
             child: Text("$title"),
             /* icon: Icon(Icons.arrow_forward_ios_rounded),*/
@@ -52,8 +52,10 @@ class HomeHeader extends StatelessWidget {
                   notif(
                       Colors.white, "If u need any help Contact with Us", ctx),
                   SizedBox(height: 10),
-                  notif(Colors.white,
-                      "U Can Use this code WELCOME10 to get \n 10% discount", ctx),
+                  notif(
+                      Colors.white,
+                      "U Can Use this code WELCOME10 to get \n 10% discount",
+                      ctx),
                 ],
               ),
             ));

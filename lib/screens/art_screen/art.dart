@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'components/bodyOfArt.dart';
-import 'package:shop_app/models/Cart.dart';
-
 
 class ART extends StatelessWidget {
   static String routeName = "/art";
@@ -23,15 +21,19 @@ class ART extends StatelessWidget {
             style: TextStyle(color: Colors.black),
           ),
           Text(
+            "5 items",
+            style: Theme.of(context).textTheme.caption,
+          ),
+
+          /*Text(
             "${demoCarts.length} items",
             style: Theme
                 .of(context)
                 .textTheme
                 .caption,
-          ),
+          ),*/
         ],
       ),
     );
   }
 }
-

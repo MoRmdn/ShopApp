@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'components/heroBody.dart';
-import 'package:shop_app/models/Cart.dart';
 
+import 'components/heroBody.dart';
 
 class HERO extends StatelessWidget {
   static String routeName = "/hero";
@@ -23,15 +22,19 @@ class HERO extends StatelessWidget {
             style: TextStyle(color: Colors.black),
           ),
           Text(
+            "5 items",
+            style: Theme.of(context).textTheme.caption,
+          ),
+
+          /*Text(
             "${demoCarts.length} items",
             style: Theme
                 .of(context)
                 .textTheme
                 .caption,
-          ),
+          ),*/
         ],
       ),
     );
   }
 }
-

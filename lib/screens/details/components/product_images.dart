@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/models/Product.dart';
 
 import '../../../constants.dart';
+import '../../../models/Product.dart';
 import '../../../size_config.dart';
 
 class ProductImages extends StatefulWidget {
@@ -18,6 +18,7 @@ class ProductImages extends StatefulWidget {
 
 class _ProductImagesState extends State<ProductImages> {
   int selectedImage = 0;
+
   @override
   Widget build(BuildContext context) {
     return Column(

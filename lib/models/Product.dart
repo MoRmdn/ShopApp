@@ -15,9 +15,9 @@ class Product {
     this.rating = 0.0,
     this.isFavourite = false,
     this.isPopular = false,
-    this.isArt=false,
-    this.isNewArrive=false,
-    this.isSuperHero=false,
+    this.isArt = false,
+    this.isNewArrive = false,
+    this.isSuperHero = false,
     @required this.title,
     @required this.price,
     @required this.description,
@@ -30,7 +30,6 @@ List<Product> demoProducts = [
     id: 1,
     images: [
       "assets/images/StarWarsProsthesis.jpeg",
-
     ],
     colors: [
       Color(0xFFF6625E),
@@ -42,10 +41,8 @@ List<Product> demoProducts = [
     price: 64.99,
     description: description,
     rating: 4.8,
-    isFavourite: true,
     isPopular: true,
   ),
-
   Product(
     id: 2,
     images: [
@@ -63,7 +60,6 @@ List<Product> demoProducts = [
     rating: 4.1,
     isPopular: true,
   ),
-
   Product(
     id: 3,
     images: [
@@ -82,7 +78,6 @@ List<Product> demoProducts = [
     isFavourite: true,
     isPopular: true,
   ),
-
   Product(
     id: 4,
     images: [
@@ -100,12 +95,10 @@ List<Product> demoProducts = [
     rating: 4.1,
     isFavourite: true,
   ),
-
   Product(
     id: 5,
     images: [
       "assets/images/StarWarsProsthesis.jpeg",
-
     ],
     colors: [
       Color(0xFFF6625E),
@@ -120,7 +113,6 @@ List<Product> demoProducts = [
     isFavourite: true,
     isPopular: true,
   ),
-
   Product(
     id: 6,
     images: [
@@ -138,7 +130,6 @@ List<Product> demoProducts = [
     rating: 4.1,
     isPopular: true,
   ),
-
   Product(
     id: 7,
     images: [
@@ -157,7 +148,6 @@ List<Product> demoProducts = [
     isFavourite: true,
     isPopular: true,
   ),
-
   Product(
     id: 8,
     images: [
@@ -175,7 +165,6 @@ List<Product> demoProducts = [
     rating: 4.1,
     isFavourite: true,
   ),
-
   Product(
     id: 9,
     images: [
@@ -193,7 +182,6 @@ List<Product> demoProducts = [
     rating: 4.1,
     isArt: true,
   ),
-
   Product(
     id: 10,
     images: [
@@ -211,7 +199,6 @@ List<Product> demoProducts = [
     rating: 4.1,
     isArt: true,
   ),
-
   Product(
     id: 11,
     images: [
@@ -229,7 +216,6 @@ List<Product> demoProducts = [
     rating: 4.1,
     isArt: true,
   ),
-
   Product(
     id: 12,
     images: [
@@ -247,7 +233,6 @@ List<Product> demoProducts = [
     rating: 4.1,
     isNewArrive: true,
   ),
-
   Product(
     id: 13,
     images: [
@@ -263,9 +248,8 @@ List<Product> demoProducts = [
     price: 100.20,
     description: description,
     rating: 4.1,
-    isNewArrive: true,
+    isArt: true,
   ),
-
   Product(
     id: 14,
     images: [
@@ -281,9 +265,8 @@ List<Product> demoProducts = [
     price: 100.20,
     description: description,
     rating: 4.1,
-    isNewArrive: true,
+    isArt: true,
   ),
-
   Product(
     id: 15,
     images: [
@@ -299,9 +282,8 @@ List<Product> demoProducts = [
     price: 100.20,
     description: description,
     rating: 4.1,
-    isNewArrive: true,
+    isArt: true,
   ),
-
   Product(
     id: 16,
     images: [
@@ -317,9 +299,8 @@ List<Product> demoProducts = [
     price: 100.20,
     description: description,
     rating: 4.1,
-    isNewArrive: true,
+    isArt: true,
   ),
-
   Product(
     id: 17,
     images: [
@@ -335,9 +316,8 @@ List<Product> demoProducts = [
     price: 100.20,
     description: description,
     rating: 4.1,
-    isNewArrive: true,
+    isArt: true,
   ),
-
   Product(
     id: 18,
     images: [
@@ -355,7 +335,6 @@ List<Product> demoProducts = [
     rating: 4.1,
     isNewArrive: true,
   ),
-
   Product(
     id: 19,
     images: [
@@ -371,9 +350,8 @@ List<Product> demoProducts = [
     price: 100.20,
     description: description,
     rating: 4.1,
-    isNewArrive: true,
+    isSuperHero: true,
   ),
-
   Product(
     id: 20,
     images: [
@@ -389,9 +367,8 @@ List<Product> demoProducts = [
     price: 100.20,
     description: description,
     rating: 4.1,
-    isNewArrive: true,
+    isSuperHero: true,
   ),
-
   Product(
     id: 21,
     images: [
@@ -407,9 +384,8 @@ List<Product> demoProducts = [
     price: 100.20,
     description: description,
     rating: 4.1,
-    isNewArrive: true,
+    isSuperHero: true,
   ),
-
   Product(
     id: 22,
     images: [
@@ -425,9 +401,8 @@ List<Product> demoProducts = [
     price: 100.20,
     description: description,
     rating: 4.1,
-    isNewArrive: true,
+    isSuperHero: true,
   ),
-
   Product(
     id: 23,
     images: [
@@ -443,14 +418,353 @@ List<Product> demoProducts = [
     price: 100.20,
     description: description,
     rating: 4.1,
-    isNewArrive: true,
+    isSuperHero: true,
   ),
-
-
-
-
-
 ];
 
-const String description =
-    "";
+List<Product> demoProducts2 = [
+  Product(
+    id: 1,
+    images: [
+      "assets/images/ironMan.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "IronMan",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isSuperHero: true,
+  ),
+  Product(
+    id: 2,
+    images: [
+      "assets/images/ironMan.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "IronMan",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isSuperHero: true,
+  ),
+  Product(
+    id: 3,
+    images: [
+      "assets/images/ironMan.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "IronMan",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isSuperHero: true,
+  ),
+  Product(
+    id: 4,
+    images: [
+      "assets/images/ironMan.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "IronMan",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isSuperHero: true,
+  ),
+  Product(
+    id: 5,
+    images: [
+      "assets/images/ironMan.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "IronMan",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isSuperHero: true,
+  ),
+  Product(
+    id: 6,
+    images: [
+      "assets/images/ironMan.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "IronMan",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isSuperHero: true,
+  ),
+  Product(
+    id: 7,
+    images: [
+      "assets/images/ironMan.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "IronMan",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isSuperHero: true,
+  ),
+  Product(
+    id: 8,
+    images: [
+      "assets/images/ironMan.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "IronMan",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isSuperHero: true,
+  ),
+  Product(
+    id: 9,
+    images: [
+      "assets/images/ironMan.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "IronMan",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isSuperHero: true,
+  ),
+  Product(
+    id: 10,
+    images: [
+      "assets/images/ironMan.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "IronMan",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isSuperHero: true,
+  ),
+];
+
+List<Product> demoProducts3 = [
+  Product(
+    id: 1,
+    images: [
+      "assets/images/art.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Multi Hero",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isArt: true,
+  ),
+  Product(
+    id: 2,
+    images: [
+      "assets/images/art.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Multi Hero",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isArt: true,
+  ),
+  Product(
+    id: 3,
+    images: [
+      "assets/images/art.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Multi Hero",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isArt: true,
+  ),
+  Product(
+    id: 4,
+    images: [
+      "assets/images/art.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Multi Hero",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isArt: true,
+  ),
+  Product(
+    id: 5,
+    images: [
+      "assets/images/art.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Multi Hero",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isArt: true,
+  ),
+  Product(
+    id: 6,
+    images: [
+      "assets/images/art.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Multi Hero",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isArt: true,
+  ),
+  Product(
+    id: 7,
+    images: [
+      "assets/images/art.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Multi Hero",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isArt: true,
+  ),
+  Product(
+    id: 8,
+    images: [
+      "assets/images/art.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Multi Hero",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isArt: true,
+  ),
+  Product(
+    id: 9,
+    images: [
+      "assets/images/art.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Multi Hero",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isArt: true,
+  ),
+  Product(
+    id: 10,
+    images: [
+      "assets/images/art.jpeg",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Multi Hero",
+    price: 100.20,
+    description: description,
+    rating: 4.1,
+    isArt: true,
+  ),
+];
+const String description = "Want your part created on a specific 3D printing technology or in a specific material? Or maybe you have heat-resistance, strength, or part finish requirements? Let us know any special requirements.";

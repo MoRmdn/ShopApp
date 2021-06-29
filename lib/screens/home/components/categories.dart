@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop_app/constants.dart';
+import 'package:printing_app/constants.dart';
+
 import '../../../size_config.dart';
 
 class Categories extends StatelessWidget {
@@ -16,8 +17,7 @@ class Categories extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children:
-        List.generate(
+        children: List.generate(
           categories.length,
           (index) => CategoryCard(
             icon: categories[index]["icon"],
@@ -49,13 +49,13 @@ class CategoryCard extends StatelessWidget {
         width: getProportionateScreenWidth(55),
         child: Column(
           children: [
-
             Container(
               padding: EdgeInsets.all(getProportionateScreenWidth(15)),
               height: getProportionateScreenWidth(55),
               width: getProportionateScreenWidth(55),
               decoration: BoxDecoration(
-                color: Color(0xFFFFECDF),
+
+                color: Color.fromRGBO(200, 211, 213, 1.0),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: SvgPicture.asset(
