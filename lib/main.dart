@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:printing_app/routes.dart';
+import 'package:provider/provider.dart';
 import './screens/splash/splash_screen.dart';
 import './theme.dart';
+import 'getFiv.dart';
 
 
 void main() {
-  runApp(MyApp());
+
+  runApp(
+      MultiProvider(
+        providers: [
+          ChangeNotifierProvider(create: (_) => myProvider()),
+        ],
+          child: MyApp()
+      ),
+  );
 }
 
 class MyApp extends StatefulWidget {

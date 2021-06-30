@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:printing_app/components/product_card.dart';
 import 'package:printing_app/models/Product.dart';
-import 'package:printing_app/screens/getFiv.dart';
+import 'package:printing_app/getFiv.dart';
 
 import '../../../size_config.dart';
 
