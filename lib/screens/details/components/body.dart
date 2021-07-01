@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:printing_app/components/default_button.dart';
 import 'package:printing_app/models/Product.dart';
 import 'package:printing_app/size_config.dart';
+import 'package:provider/provider.dart';
+import '../../../getFiv.dart';
 import 'color_dots.dart';
 import 'product_description.dart';
 import 'product_images.dart';
@@ -57,7 +59,9 @@ class Body extends StatelessWidget {
                         ),
                         child: DefaultButton(
                           text: "Add To Cart",
-                          press: () {},
+                          press: () {
+                            Provider.of<myProvider>(context, listen: false).toggleFiv(product.id);
+                          },
                         ),
                       ),
                     ),

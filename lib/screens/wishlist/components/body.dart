@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:printing_app/components/product_card.dart';
 import 'package:printing_app/models/Product.dart';
 import 'package:printing_app/getFiv.dart';
-
 import '../../../size_config.dart';
 
 class Body extends StatefulWidget {
@@ -16,7 +15,7 @@ class _BodyState extends State<Body> {
     List<Product> myList = myProvider.wishList;
     if (myList.isEmpty) {
       return Center(
-        child: Text('You have No Favorite Yet'),
+        child: Text('You have No Favourite Yet'),
       );
     } else {
       return GridView(

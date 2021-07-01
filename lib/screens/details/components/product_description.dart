@@ -54,7 +54,8 @@ class ProductDescription extends StatelessWidget {
                   },
                   child: SvgPicture.asset(
                     "assets/icons/Heart Icon_2.svg",
-                    color: product.isFavourite
+
+                    color: Provider.of<myProvider>(context, listen: false).isProFiv(product.id)
                         ? Color(0xFFFF4848)
                         : Color(0xFFDBDEE4),
                     height: getProportionateScreenWidth(16),
