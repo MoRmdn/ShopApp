@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "528750796568",
+    "project_id": "d-printing-ed4b3",
+    "storage_bucket": "d-printing-ed4b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528750796568:android:1341fab70a6e528de3886d",
+        "android_client_info": {
+          "package_name": "com.example.shop_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528750796568-uvttia0r1696c2jdhefnhfhr9h5mq8fn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC64CuU5xOeMtw0vtA3jxhecKMKbjZIhBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528750796568-uvttia0r1696c2jdhefnhfhr9h5mq8fn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
