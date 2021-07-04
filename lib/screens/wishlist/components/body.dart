@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:printing_app/components/product_card.dart';
 import 'package:printing_app/models/Product.dart';
-import 'package:printing_app/getFiv.dart';
+import 'package:printing_app/provider.dart';
 import '../../../size_config.dart';
 
 class Body extends StatefulWidget {
@@ -22,10 +22,10 @@ class _BodyState extends State<Body> {
         padding: EdgeInsets.all(25),
         children: [
           ...List.generate(
-            demoProducts2.length,
+            myList.length,
             (index) {
-              if (demoProducts2[index].isFavourite)
-                return ProductCard(product: demoProducts2[index]);
+              if (myList[index].isFavourite)
+                return ProductCard(product: myList[index]);
               return SizedBox.shrink(
                 child: ElevatedButton(
                   child: Text('Button'),

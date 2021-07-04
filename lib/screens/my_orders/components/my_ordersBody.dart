@@ -3,15 +3,7 @@ import 'package:printing_app/components/product_card.dart';
 import 'package:printing_app/models/Product.dart';
 import '../../../size_config.dart';
 import 'package:printing_app/provider.dart';
-
-
-
-class Body extends StatefulWidget {
-  @override
-  _BodyState createState() => _BodyState();
-}
-
-class _BodyState extends State<Body> {
+class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Product> cartList = myProvider.cartList;

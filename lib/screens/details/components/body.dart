@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:printing_app/components/default_button.dart';
 import 'package:printing_app/models/Product.dart';
+import 'package:printing_app/screens/cart/cart_screen.dart';
+import 'package:printing_app/screens/details/components/radioButtons.dart';
 import 'package:printing_app/size_config.dart';
 import 'package:provider/provider.dart';
-import '../../../getFiv.dart';
+import '../../../provider.dart';
 import 'color_dots.dart';
 import 'product_description.dart';
 import 'product_images.dart';
@@ -33,6 +35,8 @@ class Body extends StatelessWidget {
                   children: [
                     ColorDots(product: product),
                     SizedBox(height: 20,),
+                    radioButt(),
+                    SizedBox(height: 20,),
                     TextField(
                       minLines: 3,
                       maxLines:5,
@@ -48,20 +52,38 @@ class Body extends StatelessWidget {
                         ),)
 
                     ),
-                    TopRoundedContainer(
-                      color: Colors.white,
-                      child: Padding(
-                        padding: EdgeInsets.only(
-                          left: SizeConfig.screenWidth * 0.15,
-                          right: SizeConfig.screenWidth * 0.15,
-                          bottom: getProportionateScreenWidth(40),
-                          top: getProportionateScreenWidth(15),
-                        ),
-                        child: DefaultButton(
-                          text: "Add To Cart",
-                          press: () {
-                            Provider.of<myProvider>(context, listen: false).toggleFiv(product.id);
-                          },
+                    SizedBox(height: 20,),
+                    ChangeNotifierProvider(
+                      create:(BuildContext context) => myProvider(),
+                      child: TopRoundedContainer(
+                        color: Colors.white,
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            left: SizeConfig.screenWidth * 0.15,
+                            right: SizeConfig.screenWidth * 0.15,
+                            bottom: getProportionateScreenWidth(40),
+                            top: getProportionateScreenWidth(15),
+                          ),
+                          child: DefaultButton(
+                            text: "Add To Cart",
+                            press: () {
+                              Provider.of<myProvider>(context, listen: false).toggleAdd(product.id);
+                              final _sBar=SnackBar(content: Text("added to th cart"),
+                              shape:  RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                               backgroundColor: Color(0xFFFF7643),
+                                action: SnackBarAction(
+                                  label: "View",
+                                  textColor: Colors.white ,
+                                  onPressed:(){
+                                    Navigator.pushNamed(context, CartScreen.routeName);
+                                  } ,
+                                ) ,
+                              );
+                              Scaffold.of(context).showSnackBar(_sBar);
+                            },
+                          ),
                         ),
                       ),
                     ),

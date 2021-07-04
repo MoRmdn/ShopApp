@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:printing_app/models/Product.dart';
 import 'package:printing_app/screens/hero_screen/hero.dart';
 
 import '../../../size_config.dart';
@@ -31,13 +32,13 @@ class SpecialOffers extends StatelessWidget {
                 image:
                     "assets/images/Awesome Prosthetics Make Kids Feel Like Superheroes.jpeg",
                 category: "Super Hero",
-                numOfBrands: 5,
+                numOfBrands: demoProducts2.length,
                 press: () => Navigator.pushNamed(context, HERO.routeName),
               ),
               SpecialOfferCard(
                 image: "assets/images/Hero Arm prosthetic.jpeg",
                 category: "Art",
-                numOfBrands: 3,
+                numOfBrands: demoProducts3.length,
                 press: () {
                   Navigator.pushNamed(context, ART.routeName);
                 },

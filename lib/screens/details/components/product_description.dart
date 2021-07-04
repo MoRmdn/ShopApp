@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:printing_app/screens/wishlist/wishlist.dart';
 import 'package:provider/provider.dart';
 import 'package:printing_app/models/Product.dart';
-import 'package:printing_app/getFiv.dart';
+import 'package:printing_app/provider.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
 
@@ -40,9 +41,9 @@ class ProductDescription extends StatelessWidget {
                 padding: EdgeInsets.all(getProportionateScreenWidth(15)),
                 width: getProportionateScreenWidth(64),
                 decoration: BoxDecoration(
-                  color: product.isFavourite
+                  /*color: product.isFavourite
                       ? Color(0xFFFFE6E6)
-                      : Color(0xFFF5F6F9),
+                      : Color(0xFFF5F6F9),*/
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(20),
                     bottomLeft: Radius.circular(20),
@@ -51,13 +52,27 @@ class ProductDescription extends StatelessWidget {
                 child: TextButton(
                   onPressed: () {
                     Provider.of<myProvider>(context, listen: false).toggleFiv(product.id);
+                    final _sBar=SnackBar(content: Text("added to th Favourite"),
+                      shape:  RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      backgroundColor: Color(0xFFFF7643),
+                      action: SnackBarAction(
+                        label: "View",
+                        textColor: Colors.white ,
+                        onPressed:(){
+                          Navigator.pushNamed(context, WishList.routeName);
+                        } ,
+                      ) ,
+                    );
+                    Scaffold.of(context).showSnackBar(_sBar);
                   },
                   child: SvgPicture.asset(
                     "assets/icons/Heart Icon_2.svg",
 
-                    color: Provider.of<myProvider>(context, listen: false).isProFiv(product.id)
+                    /*color: Provider.of<myProvider>(context, listen: false).isProFiv(product.id)
                         ? Color(0xFFFF4848)
-                        : Color(0xFFDBDEE4),
+                        : Color(0xFFDBDEE4),*/
                     height: getProportionateScreenWidth(16),
                   ),
                 )

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:printing_app/components/default_button.dart';
-
+import 'package:printing_app/screens/my_orders/my_orders.dart';
 import '../../../constants.dart';
 import '../../../size_config.dart';
 
@@ -63,7 +63,7 @@ class CheckoutCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text.rich(
+               /* Text.rich(
                   TextSpan(
                     text: "Total:\n",
                     children: [
@@ -73,12 +73,14 @@ class CheckoutCard extends StatelessWidget {
                       ),
                     ],
                   ),
-                ),
+                ),*/
                 SizedBox(
                   width: getProportionateScreenWidth(190),
                   child: DefaultButton(
-                    text: "Check Out",
-                    press: () {},
+                    text: "Order Now",
+                    press: () {
+                      Navigator.pushNamed(context, myOrders.routeName);
+                    },
                   ),
                 ),
               ],

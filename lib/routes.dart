@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:printing_app/screens/f_deal/f_deal.dart';
+import 'package:printing_app/screens/my_orders/my_orders.dart';
+import 'package:printing_app/screens/new_arrival/n_arrival.dart';
 import '../screens/cart/cart_screen.dart';
 import '../screens/complete_profile/complete_profile_screen.dart';
 import '../screens/details/components/product_description.dart';
@@ -17,20 +20,25 @@ import 'screens/sign_up/sign_up_screen.dart';
 import 'screens/wishlist/wishlist.dart';
 
 final Map<String, WidgetBuilder> routes ={
-SplashScreen.routeName: (context) => SplashScreen(),
-SignInScreen.routeName: (context) => SignInScreen(),
-ForgotPasswordScreen.routeName: (context) => ForgotPasswordScreen(),
-signInSuccessScreen.routeName: (context) => signInSuccessScreen(),
-SignUpScreen.routeName: (context) => SignUpScreen(),
-CompleteProfileScreen.routeName: (context) => CompleteProfileScreen(),
-HomeScreen.routeName: (context) => HomeScreen(),
-DetailsScreen.routeName: (context) => DetailsScreen(),
-CartScreen.routeName: (context) => CartScreen(),
-ProfileScreen.routeName: (context) => ProfileScreen(),
-SignUpSuccessScreen.routeName: (context) => SignUpSuccessScreen(),
-GuestLoginSuccessScreen.routeName: (context) => GuestLoginSuccessScreen(),
-WishList.routeName: (context) => WishList(),
-ART.routeName: (context) => ART(),
-HERO.routeName: (context) => HERO(),
-ProductDescription.routeName: (context) => ProductDescription(),
+
+  SplashScreen.routeName: (context) => SplashScreen(),
+  SignInScreen.routeName: (context) => SignInScreen(),
+  ForgotPasswordScreen.routeName: (context) => ForgotPasswordScreen(),
+  signInSuccessScreen.routeName: (context) => signInSuccessScreen(),
+  SignUpScreen.routeName: (context) => SignUpScreen(),
+  CompleteProfileScreen.routeName: (context) => CompleteProfileScreen(),
+  HomeScreen.routeName: (context) => HomeScreen(),
+  DetailsScreen.routeName: (context) => DetailsScreen(),
+  CartScreen.routeName: (context) => CartScreen(),
+  ProfileScreen.routeName: (context) => ProfileScreen(),
+  SignUpSuccessScreen.routeName: (context) => SignUpSuccessScreen(),
+  GuestLoginSuccessScreen.routeName: (context) => GuestLoginSuccessScreen(),
+  WishList.routeName: (context) => WishList(),
+  ART.routeName: (context) => ART(),
+  HERO.routeName: (context) => HERO(),
+  ProductDescription.routeName: (context) => ProductDescription(),
+  newArrival.routeName: (context) => newArrival(),
+  popularPro.routeName: (context) => popularPro(),
+  myOrders.routeName:(context) => myOrders(),
+
 };

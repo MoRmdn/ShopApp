@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:printing_app/models/Product.dart';
-import 'components/bodyOfArt.dart';
+import 'package:printing_app/provider.dart';
+import 'components/my_ordersBody.dart';
 
-class ART extends StatelessWidget {
-  static String routeName = "/art";
+class myOrders extends StatelessWidget {
+  static String routeName = "/myOr";
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +18,11 @@ class ART extends StatelessWidget {
       title: Column(
         children: [
           Text(
-            "ART",
+            "My Orders",
             style: TextStyle(color: Colors.black),
           ),
           Text(
-              "${demoProducts3.length} items",
+            "${myProvider.cartList.length} myProvider.ordersList.length item",
             style: Theme.of(context).textTheme.caption,
           ),
 

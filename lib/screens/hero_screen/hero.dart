@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:printing_app/models/Product.dart';
 
 import 'components/heroBody.dart';
 
@@ -22,7 +23,7 @@ class HERO extends StatelessWidget {
             style: TextStyle(color: Colors.black),
           ),
           Text(
-            "5 items",
+            "${demoProducts2.length} items",
             style: Theme.of(context).textTheme.caption,
           ),
 

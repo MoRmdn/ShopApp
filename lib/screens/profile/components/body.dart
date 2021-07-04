@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:printing_app/constants.dart';
+import 'package:printing_app/screens/my_orders/my_orders.dart';
 import 'package:printing_app/screens/sign_in/sign_in_screen.dart';
-
 import 'profile_menu.dart';
 import 'profile_pic.dart';
 
@@ -68,24 +68,36 @@ class Body extends StatelessWidget {
         children: [
           ProfilePic(),
           SizedBox(height: 20),
-          ProfileMenu(
+          /*ProfileMenu(
             text: "My Account",
             icon: "assets/icons/User Icon.svg",
             press: () => {},
-          ),
+          ),*/
           ProfileMenu(
             text: "My Orders",
             icon: "assets/icons/order.svg",
-            press: () => {},
+            press: () => {
+              Navigator.pushNamed(context, myOrders.routeName),
+            },
           ),
           ProfileMenu(
             text: "Notifications",
             icon: "assets/icons/Bell.svg",
             press: () => show2(context),
           ),
-          ProfileMenu(
+         /* ProfileMenu(
             text: "Settings",
             icon: "assets/icons/Settings.svg",
+            press: () {},
+          ),*/
+          ProfileMenu(
+            text: "FeedBack",
+            icon: "assets/icons/feedback.svg",
+            press: () {},
+          ),
+          ProfileMenu(
+            text: "Rate Us on PlayStore",
+            icon: "assets/icons/rating.svg",
             press: () {},
           ),
           ProfileMenu(
